@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -257,6 +258,16 @@ footer { text-align: center; padding: 24px 60px; font-size: 12px; color: #555; b
   object-position:center top !important;
 }
 
+
+.hero-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;}
+.hero-summary{padding-left:40px;border-left:3px solid var(--accent);}
+.summary-tag{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px;}
+.hero-summary p{font-size:15px;line-height:1.8;color:var(--mid);margin-bottom:14px;}
+.hero-summary strong{color:var(--dark);}
+.hero-summary ul{margin-top:20px;padding-left:18px;}
+.hero-summary li{margin-bottom:8px;color:var(--dark);font-weight:500;}
+@media(max-width:768px){.hero-layout{grid-template-columns:1fr;gap:30px;}.hero-summary{padding-left:20px;}}
+
 </style>
 </head>
 <body>
@@ -274,19 +285,39 @@ footer { text-align: center; padding: 24px 60px; font-size: 12px; color: #555; b
 </nav>
 
 <!-- HERO -->
+
 <section class="hero">
+<div class="hero-layout">
+<div>
   <h1 class="hero-name">Devendra<br>Agarwal</h1>
   <h2 class="hero-subtitle">Copywriter & Content Strategist</h2>
-  <p class="hero-tagline">
-    I write copy that makes people <strong>stop scrolling.</strong><br>
-    500+ pieces. 13 months. 200% growth.<br>
-    Hooks, scripts, captions — all audience-first.
-  </p>
   <div class="hero-cta">
     <a href="mailto:devendra.agarwal2002@gmail.com" class="cta-primary">Get in Touch →</a>
     <a href="#work" class="cta-secondary">See the Work</a>
   </div>
+</div>
+
+<div class="hero-summary">
+  <div class="summary-tag">MBA (Marketing & Analytics) · IIIT Lucknow</div>
+
+  <p>500+ pieces written across legal media, social content, video scripts and brand copy since 2021.</p>
+
+  <p>Helped grow <strong>Desi Kaanoon from 60K → 100K followers</strong> through audience-first content and consistent execution.</p>
+
+  <p>Built a personal YouTube channel that generated <strong>560K+ organic views</strong> through scripting, titles and thumbnail strategy.</p>
+
+  <p>I combine storytelling, strategy and analytics to create content that earns attention and drives action.</p>
+
+  <ul>
+    <li>Audience-first copy</li>
+    <li>Growth-driven content strategy</li>
+    <li>Fast, reliable execution</li>
+    <li>Cross-functional collaboration</li>
+  </ul>
+</div>
+</div>
 </section>
+
 
 
 <hr>
@@ -357,27 +388,6 @@ footer { text-align: center; padding: 24px 60px; font-size: 12px; color: #555; b
     </div>
   </div>
 </div>
-
-<hr>
-
-<!-- ABOUT -->
-<section class="section">
-  <div class="section-label">About</div>
-  <h2 class="section-title">Why I Write</h2>
-  <div class="story-grid">
-    <div class="story-text">
-      <p>I'm an <strong>MBA graduate (2026) in Marketing & Analytics from IIIT Lucknow</strong>. I've been writing since 2021 — legal articles, video scripts, social captions, and brand copy across multiple platforms and industries.</p>
-      <p>At <strong>Desi Kaanoon</strong>, I was the sole content engine for 13 months. Every article, reel script, and caption passed through me. I grew the page from <strong>60K to 100K verified followers</strong> — purely through consistent, audience-first content.</p>
-      <p>On <strong>YouTube</strong>, I built a personal channel from scratch — scripting, titling, and designing every thumbnail myself. The result: <strong>5,60,633 views, zero rupees spent.</strong></p>
-    </div>
-    <div class="highlight-cards">
-      <div class="h-card"><h4>🎯 Audience-First Always</h4><p>I think about who is reading before I type a word. Copy that doesn't connect doesn't count.</p></div>
-      <div class="h-card"><h4>📊 Numbers-Driven</h4><p>I track, test, and iterate. Every 200% growth number I claim is backed by real data.</p></div>
-      <div class="h-card"><h4>⚡ Deadline Discipline</h4><p>2–3 pieces a day for 13 straight months. Fast without losing quality.</p></div>
-      <div class="h-card"><h4>🤝 Team Player</h4><p>Worked alongside Supreme Court lawyers, founders, and marketers. I adapt to any voice.</p></div>
-    </div>
-  </div>
-</section>
 
 <hr>
 
