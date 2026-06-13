@@ -132,36 +132,6 @@ hr { border: none; border-top: 1px solid var(--border); }
 .dk-link { font-size: 13px; color: var(--accent); text-decoration: none; font-weight: 600; }
 .dk-link:hover { text-decoration: underline; }
 
-
-.dk-showcase{
-    display:grid;
-    grid-template-columns:1fr 420px;
-    gap:32px;
-    align-items:start;
-    margin-bottom:40px;
-}
-.dk-yt-section iframe{
-    width:100%;
-    border-radius:12px;
-}
-
-
-.dk-card{
-    display:flex;
-    flex-direction:column;
-    height:100%;
-}
-.dk-card-body{
-    display:flex;
-    flex-direction:column;
-}
-.dk-showcase{
-    align-items:start;
-}
-.did-list{
-    margin-top:12px;
-}
-
 /* WHAT I DID LIST */
 .did-list { display: flex; flex-direction: column; gap: 0; }
 .did-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid var(--border); }
@@ -362,61 +332,50 @@ footer { text-align: center; padding: 24px 60px; font-size: 12px; color: #555; b
 
 <hr>
 
+
 <!-- WORK — DESI KAANOON -->
 <section class="section" id="work">
   <div class="section-label">Featured Work · Mar 2024 – Apr 2025</div>
   <h2 class="section-title">Desi Kaanoon</h2>
-  <p class="section-sub" style="max-width:100%;width:100%;">India's verified legal media brand. I ran the entire content operation — for 13 months straight.</p>
 
-  <div class="work-grid">
-    <div class="dk-showcase">
-    <div class="dk-card">
-      <div class="dk-screenshots">
-        <img src="DK.png" alt="Desi Kaanoon 100K followers">
-      </div>
-      <div class="dk-card-body">
-        <div class="dk-badge">✓ Verified · Grew 60K → 100K Followers</div>
-        <h3>Desi Kaanoon</h3>
-        <p>Sole content manager for India's emerging legal media platform. Wrote 500+ articles, captions, and video scripts alongside Supreme Court lawyers — turning dense legal language into compelling copy that drove 200% engagement growth.</p>
-        <div class="dk-nums">
-          <div class="dk-num"><div class="dk-num-v">100K</div><div class="dk-num-l">Followers</div></div>
-          <div class="dk-num"><div class="dk-num-v">200%</div><div class="dk-num-l">Engagement</div></div>
-          <div class="dk-num"><div class="dk-num-v">500+</div><div class="dk-num-l">Pieces</div></div>
-          <div class="dk-num"><div class="dk-num-v">3×</div><div class="dk-num-l">Organic Reach</div></div>
-        </div>
-        <a href="https://www.instagram.com/desikaanoon/" target="_blank" class="dk-link">View Profile →</a>
-      </div>
-    </div>
+  <p class="section-sub" style="max-width:100%;margin-bottom:40px;">
+    India's verified legal media brand. I ran the entire content operation — for 13 months straight.
+  </p>
 
-    <div class="dk-yt-section">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/haJOJSpjVy4?controls=0"
-      title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    </div>
-    </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:32px;">
+      <div style="border:1px solid #E8E8E8;border-radius:12px;overflow:hidden;">
+          <img src="DK.png" alt="Desi Kaanoon" style="width:100%;display:block;">
+      </div>
 
-    <div class="did-list">
-      <div class="did-item">
-        <div class="did-num">01</div>
-        <div class="did-content"><h4>Scripted every video</h4><p>Turned Supreme Court judgements into short-form scripts people actually watched. Legal content that competed with memes — and won.</p></div>
+      <div style="border:1px solid #E8E8E8;border-radius:12px;overflow:hidden;">
+          <iframe width="100%" height="420"
+          src="https://www.youtube.com/embed/haJOJSpjVy4?controls=0"
+          frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="did-item">
-        <div class="did-num">02</div>
-        <div class="did-content"><h4>Wrote 2–3 pieces daily</h4><p>Articles, captions, reel scripts — published every single day for 13 months. Zero missed deadlines.</p></div>
-      </div>
-      <div class="did-item">
-        <div class="did-num">03</div>
-        <div class="did-content"><h4>Built the hook strategy</h4><p>Developed the opening-line formula that stopped the scroll. Engagement grew 200% in 8 months.</p></div>
-      </div>
-      <div class="did-item">
-        <div class="did-num">04</div>
-        <div class="did-content"><h4>Grew 60K → 100K followers</h4><p>Added 40K real followers organically. No ads, no paid promotion. Consistent, audience-first content that compounded over 13 months.</p></div>
-      </div>
-    </div>
+  </div>
+
+  <p style="font-size:18px;line-height:1.8;width:100%;max-width:none;margin-bottom:30px;">
+    Sole content manager for India's emerging legal media platform. Wrote 500+ articles,
+    captions, and video scripts alongside Supreme Court lawyers — turning dense legal language
+    into compelling copy that drove 200% engagement growth.
+  </p>
+
+  <div class="dk-nums" style="margin-bottom:50px;">
+      <div class="dk-num"><div class="dk-num-v">100K+</div><div class="dk-num-l">Followers</div></div>
+      <div class="dk-num"><div class="dk-num-v">200%</div><div class="dk-num-l">Engagement</div></div>
+      <div class="dk-num"><div class="dk-num-v">500+</div><div class="dk-num-l">Pieces Written</div></div>
+      <div class="dk-num"><div class="dk-num-v">3×</div><div class="dk-num-l">Organic Reach</div></div>
+  </div>
+
+  <div class="did-list">
+      <div class="did-item"><div class="did-num">01</div><div class="did-content"><h4>Scripted every video</h4><p>Turned Supreme Court judgements into short-form scripts people actually watched.</p></div></div>
+      <div class="did-item"><div class="did-num">02</div><div class="did-content"><h4>Wrote 2–3 pieces daily</h4><p>Articles, captions, reel scripts — published every single day for 13 months.</p></div></div>
+      <div class="did-item"><div class="did-num">03</div><div class="did-content"><h4>Built the hook strategy</h4><p>Developed the opening-line formula that stopped the scroll.</p></div></div>
+      <div class="did-item"><div class="did-num">04</div><div class="did-content"><h4>Grew 60K → 100K followers</h4><p>Added 40K real followers organically.</p></div></div>
   </div>
 </section>
 
 <hr>
-
 <!-- YOUTUBE -->
 <section class="section" id="youtube">
   <div class="section-label">Personal Channel · Asli Baniya</div>
