@@ -143,9 +143,15 @@ hr { border: none; border-top: 1px solid var(--border); }
 .did-content p { font-size: 13px; color: var(--mid); line-height: 1.6; }
 
 /* YOUTUBE SECTION */
-.yt-header { display: flex; gap: 40px; align-items: flex-start; margin-bottom: 36px; flex-wrap: wrap; }
+.yt-header{
+display:grid;
+grid-template-columns:1.6fr .8fr;
+gap:32px;
+align-items:start;
+margin-bottom:30px;
+}
 .yt-meta { flex: 1; min-width: 260px; }
-.yt-analytics-card { flex: 0 0 280px; background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+.yt-analytics-card { width:100%; background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
 .yt-analytics-img { width: 100%; height: 160px; object-fit: cover; object-position: center 30%; border-bottom: 1px solid var(--border); }
 .yt-analytics-body { padding: 18px; }
 .yt-analytics-body h4 { font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
@@ -228,7 +234,13 @@ footer { text-align: center; padding: 24px 60px; font-size: 12px; color: #555; b
   .thumb-grid { grid-template-columns: repeat(2,1fr); }
   .expertise-grid { grid-template-columns: repeat(2,1fr); }
   .tools-grid, .achieve-grid { grid-template-columns: repeat(2,1fr); }
-  .yt-header { flex-direction: column; }
+  .yt-header{
+display:grid;
+grid-template-columns:1.6fr .8fr;
+gap:32px;
+align-items:start;
+margin-bottom:30px;
+}
   .yt-analytics-card { flex: none; width: 100%; }
   .contact-wrap { padding: 60px 20px; }
 }
@@ -267,6 +279,18 @@ footer { text-align: center; padding: 24px 60px; font-size: 12px; color: #555; b
 .hero-summary ul{margin-top:20px;padding-left:18px;}
 .hero-summary li{margin-bottom:8px;color:var(--dark);font-weight:500;}
 @media(max-width:768px){.hero-layout{grid-template-columns:1fr;gap:30px;}.hero-summary{padding-left:20px;}}
+
+
+.hero{padding:40px 60px 25px!important;}
+.hero-cta{margin-bottom:20px!important;}
+.section{padding:55px 60px!important;}
+.section-sub{margin-bottom:30px!important;}
+.stats-banner{padding:28px 60px!important;}
+.contact-wrap{padding:60px 60px!important;}
+.hero-layout{gap:35px!important;}
+.hero-summary p{margin-bottom:10px!important;line-height:1.65!important;}
+.hero-summary ul{margin-top:12px!important;}
+hr{margin:0!important;}
 
 </style>
 </head>
@@ -419,6 +443,19 @@ footer { text-align: center; padding: 24px 60px; font-size: 12px; color: #555; b
         </div>
       </div>
       <p class="reel-description">This reel went viral across Instagram. Every word in the script was tested. The hook. The pacing. The CTA. Nothing was left to chance.</p>
+<div style="margin-top:28px;padding:24px;background:var(--surface);border-radius:12px;border-left:3px solid var(--accent);">
+<h4 style="font-family:'Space Grotesk',sans-serif;font-size:18px;margin-bottom:14px;">Why This Reel Worked</h4>
+<p style="font-size:14px;line-height:1.8;color:var(--mid);margin-bottom:12px;">
+The reel opened with a strong curiosity gap and immediately addressed a topic people already cared about. Instead of revealing everything upfront, the script created tension that encouraged viewers to keep watching.
+</p>
+<p style="font-size:14px;line-height:1.8;color:var(--mid);margin-bottom:12px;">
+Every line was written for retention. Short sentences, fast pacing and a clear narrative structure helped maintain attention throughout the video.
+</p>
+<p style="font-size:14px;line-height:1.8;color:var(--mid);">
+The result was higher shares, stronger engagement and significant organic reach without paid promotion.
+</p>
+</div>
+
     </div>
     
     <!-- Desi Kaanoon YouTube Video (Right) -->
@@ -483,9 +520,25 @@ footer { text-align: center; padding: 24px 60px; font-size: 12px; color: #555; b
 
   <div class="yt-header">
     <div class="yt-meta">
-      <p style="font-size:15px;color:var(--mid);line-height:1.8;max-width:500px;">Built a channel from scratch with zero budget. Wrote every script, designed every thumbnail, crafted every title. No shortcuts. No editing tricks. Just copy that worked.</p>
+      <p style="font-size:15px;color:var(--mid);line-height:1.8;max-width:none;">Built a channel from scratch with zero budget. Wrote every script, designed every thumbnail, crafted every title. No shortcuts. No editing tricks. Just copy that worked.</p>
     </div>
-    <div class="yt-analytics-card">
+    
+<div style="margin-top:32px;">
+<h3 style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;margin-bottom:18px;">
+What This Channel Taught Me
+</h3>
+<p style="font-size:15px;line-height:1.9;color:var(--mid);margin-bottom:16px;">
+Growing a channel without a budget forced me to understand attention. Every title, thumbnail and opening line had one job: earn the click.
+</p>
+<p style="font-size:15px;line-height:1.9;color:var(--mid);margin-bottom:16px;">
+I tested hooks, storytelling structures and thumbnail concepts to understand what makes people stop scrolling and start watching.
+</p>
+<p style="font-size:15px;line-height:1.9;color:var(--mid);">
+The result wasn't just views. It was a repeatable system for creating content that attracts attention and keeps it.
+</p>
+</div>
+
+<div class="yt-analytics-card">
       <img class="yt-analytics-img" src="analytics.png" alt="YouTube Analytics">
       <div class="yt-analytics-body">
         <h4>Channel Analytics · Lifetime</h4>
